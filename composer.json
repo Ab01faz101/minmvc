@@ -1,0 +1,26 @@
+{
+    "name": "abolfazl/mvc",
+    "description": "mini mvc framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\Http\\Controllers\\": "app/Http/Controllers",
+            "App\\Models\\": "app/Models",
+            "Core\\": "Core"
+        },"files": [
+            "app/Helpers/helper.php",
+            "app/Helpers/ViewLoader.php",
+            "config/app.php",
+            "config/database.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "reza",
+            "email": "ar.rahmatyy@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-json": "*"
+    }
+}

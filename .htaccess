@@ -1,0 +1,7 @@
+Options -Indexes
+RewriteEngine On
+
+# بازنویسی همه درخواست‌ها به index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [L]
